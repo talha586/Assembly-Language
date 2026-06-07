@@ -1,0 +1,18 @@
+     1                                  [org 0x0100]
+     2                                  
+     3 00000000 B80A00                  mov ax,10
+     4 00000003 BB1400                  mov bx,20
+     5 00000006 B91E00                  mov cx,30
+     6                                  
+     7 00000009 89C2                    mov dx, cx
+     8 0000000B 89D8                    mov cx, bx
+     9 0000000D 89CB                    mov bx, ax
+    10 0000000F 89D1                    mov ax, dx
+    11                                  
+    12 00000011 89C2                    mov dx, cx
+    13 00000013 89D8                    mov cx, bx
+    14 00000015 89CB                    mov bx, ax
+    15 00000017 89D1                    mov ax, dx
+    16                                  
+    17 00000019 B8004C                  mov ax,0x4c00
+    18 0000001C CD21                    int 0x21
